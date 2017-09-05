@@ -65,17 +65,18 @@ The folders and files you see in this repositories, is how it is expected to be 
 
 	Project
 	|
-	├── resources 			                        // If project needs any data file, it can be found here/placed here, if data is huge they can be mounted, no need put it in your repository
+	├── data 			                        // If project needs any data file, it can be found here/placed here, if data is huge they can be mounted, no need put it in your repository
 	|
-	├── com.stackroute.datamunger	                  // all your java file will be stored in this package
-	|	└── query
-	|		└── DataTypeDefinitions.java            // this class contains a String array to hold the column data types
+	├── com.stackroute.datamunger	                  // All your java file will be stored in this package
+	|	    └── DataMunger.java                      // This is the main file, all your logic is written in this file only
+	├── com.stackroute.datamunger.query
+	|		└── DataTypeDefinitions.java            // This class contains a String array to hold the column data types
 	|		└── Header.java                         // This class implements the getHeader method to return a Header object which contains a String array for containing headers.
-	|	└── reader
+	├── com.stackroute.datamunger.reader
 	|		└── CsvQueryProcessor.java              // This class is used to read data from CSV file
-	|		└── QueryProcessingEngine.java          //abstract class containing three abstract methods that should be implemented in CsvQueryProcessor class
-	|	└── test		                             // all your test cases are written using JUnit, these test cases can be run by selecting Run As -> JUnit Test 
-	|	└── DataMunger.java	                        // This is the main file, all your logic is written in this file only
+	|		└── QueryProcessingEngine.java          // Abstract class containing three abstract methods that should be implemented in CsvQueryProcessor class
+	├── com.stackroute.datamunger.test
+    |   	└── DataMunger.java                     // All your test cases are written using JUnit, these test cases can be run by selecting Run As -> JUnit Test 
 	|
 	├── .classpath			                        // This file is generated automatically while creating the project in eclipse
 	|
@@ -133,7 +134,7 @@ The folders and files you see in this repositories, is how it is expected to be 
 > - We expect you to write the assignment on your own by following through the guidelines, learning plan, and the practice exercises
 > - The code must not be plagirized, the mentors will randomly pick the submissions and may ask you to explain the solution
 > - The code must be properly indented, code structure maintained as per the boilerplate and properly commented
-> - Follow through the problem statement and stories shared with you
+> - Follow through the problem statement shared with you
 
 ### Further Instructions on Release
 

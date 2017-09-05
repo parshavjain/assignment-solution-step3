@@ -30,9 +30,6 @@ here you can easily find data which is not a string **(for example 2008, 2008-04
 
 However, for this assignment, we will not try to convert date. It will be addressed in the next assignment.
 
-**Note : Once you have cloned boilerplate from the given gitlab URL, import the project into eclipse. 
-Your project’s test cases might show compile time errors for methods, as you have not written the complete code.**
-
 ### Expected Output
 Display each column header along with its data type
      

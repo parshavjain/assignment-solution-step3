@@ -73,7 +73,7 @@ The folders and files you see in this repositories, is how it is expected to be 
 	|		└── CsvQueryProcessor.java              // This class is used to read data from CSV file
 	|		└── QueryProcessingEngine.java          // Abstract class containing three abstract methods that should be implemented in CsvQueryProcessor class
 	├── com.stackroute.datamunger.test
-    |   	└── DataMunger.java                     // All your test cases are written using JUnit, these test cases can be run by selecting Run As -> JUnit Test 
+    |   	└── DataMungerTest.java                 // All your test cases are written using JUnit, these test cases can be run by selecting Run As -> JUnit Test 
 	|
 	├── .classpath			                        // This file is generated automatically while creating the project in eclipse
 	|

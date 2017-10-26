@@ -10,12 +10,10 @@ import com.stackroute.datamunger.query.Header;
  *	in CsvQueryProcessor class
 */
 public abstract class QueryProcessingEngine {
-
 	public abstract Header getHeader() throws IOException;
-	
+
 	public abstract void getDataRow();
-	
+
 	public abstract DataTypeDefinitions getColumnType() throws IOException;
-	
-	
+
 }
